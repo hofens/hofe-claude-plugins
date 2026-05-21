@@ -23,7 +23,7 @@ SCRIPT=$(find ~/.claude/plugins -name gather_data.py -path "*/work-report/*" 2>/
 
 If not found, also check common project paths:
 ```bash
-SCRIPT=$(find /Users/hofe/aitools/skills -name gather_data.py 2>/dev/null | head -1)
+SCRIPT=$(find /Users/hofe/aitools/hofe-claude-plugins -name gather_data.py 2>/dev/null | head -1)
 ```
 
 ## Step 2 — Gather data
