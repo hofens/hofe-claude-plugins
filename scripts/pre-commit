@@ -1,0 +1,11 @@
+#!/bin/bash
+# Pre-commit hook: auto-update README.md when marketplace.json changes
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+if git diff --cached --name-only | grep -q ".claude-plugin/marketplace.json"; then
+    echo "→ marketplace.json changed, regenerating README.md..."
+    python3 "$REPO_ROOT/scripts/update-readme.py"
+    git add "$REPO_ROOT/README.md"
+    echo "→ README.md updated and staged."
+fi
