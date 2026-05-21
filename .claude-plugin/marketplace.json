@@ -1,0 +1,20 @@
+{
+  "name": "hofe-claude-plugins",
+  "description": "Personal Claude Code plugins — work report generation and more",
+  "owner": {
+    "name": "hofens",
+    "email": "hofe.cn@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "work-report",
+      "description": "Generate daily/weekly/monthly work reports from git commits and Claude session history. Supports Chinese (日报/周报/月报) output.",
+      "author": {
+        "name": "hofens",
+        "email": "hofe.cn@gmail.com"
+      },
+      "source": "./plugins/work-report",
+      "category": "productivity"
+    }
+  ]
+}

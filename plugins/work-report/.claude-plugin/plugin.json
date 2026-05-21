@@ -1,0 +1,9 @@
+{
+  "name": "work-report",
+  "version": "1.0.0",
+  "description": "Generate daily/weekly/monthly work reports from git commits and Claude session history",
+  "author": {
+    "name": "hofens",
+    "email": "hofe.cn@gmail.com"
+  }
+}
